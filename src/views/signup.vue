@@ -1,11 +1,5 @@
 <template>
-  
   <signup></signup>
-
-  
-
-
-
 </template>
 
 <script>

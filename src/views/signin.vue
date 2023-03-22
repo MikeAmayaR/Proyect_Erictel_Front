@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import signinfr from "@/components/sign-in-fr.vue";
+import signinfr from "@/components/sign-in-component.vue";
 export default {
   name: "About",
   components: {

@@ -1,17 +1,9 @@
 <template>
 <div class="box">
-  <div class="banner_high">
-    <img src="../assets/logo.svg" alt="">
-    <div class="language">
-    <div class="flag" :class="{active:isActive}"  v-on:click="isActive = ! isActive"><img src="../assets/fr_flag.png" alt=""></div>
-    <div class="flag" :class="{active:!isActive}"  v-on:click="isActive = ! isActive"><img src="../assets/uk_flag.png" alt=""></div>
-  </div>
-  </div>
- 
-  <h1>Se connecter</h1>
+  <h1>Iniciar</h1>
  
   <div class="in">
-      <label for="name">Adresse Mail</label>
+      <label for="name">Mail</label>
     
       <div>  <input type="text" v-model="username" placeholder="E-mail"
            /><img v-if="username.length >= 4" src="../assets/ok.svg" alt=""></div>
@@ -22,7 +14,7 @@
   </div>
 
   <div class="in">
-  <label for="name">Mot de passe</label>
+  <label for="name">Password</label>
   <div>
       <input v-model="password" type="password" :name="string" placeholder="Entrer votre mot de passe" required/><img v-if="password.length >= 8" src="../assets/ok.svg" alt="">
   </div>
@@ -33,19 +25,16 @@
  
   <div class="check_bar">
     <div> <input type="checkbox" name="" id="">
-    <label for="">Se souvenir de moi</label></div>
-   
-    <a href="">Mot de passe oublié ? </a>
-
+    <label for="">Recordar</label></div>
   </div>
 
 
   <button class="log">
-    Se connecter
+    Iniciar Sesión
     </button>
    
 
-<span>Pas encore de compte ? <a href="/signup">S'inscrire</a> </span> 
+<span>No tienes cuenta? <a href="/signup">Registrate</a> </span> 
 </div>
 
 </template>
